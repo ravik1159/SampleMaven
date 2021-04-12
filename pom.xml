@@ -77,14 +77,6 @@
       	</execution>
    	</executions>
 	</plugin>
-<plugin>
-   <groupId>org.apache.maven.plugins</groupId>
-   <artifactId>maven-deploy-plugin</artifactId>
-   <version>${maven-deploy-plugin.version}</version>
-   <configuration>
-      <skip>true</skip>
-   </configuration>
-</plugin>
 
 <plugin>
    <groupId>org.sonatype.plugins</groupId>
@@ -100,7 +92,7 @@
       </execution>
    </executions>
    <configuration>
-      <serverId>Nexus</serverId>
+      <serverId>nexus-snapshots</serverId>
       <nexusUrl>http://localhost:8081</nexusUrl>
       <skipStaging>true</skipStaging>
    </configuration>
